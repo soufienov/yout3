@@ -1,4 +1,4 @@
-#Fri Apr 06 20:14:00 GMT+01:00 2018
-base.0=E\:\\MusicPlayer1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
+#Wed May 16 15:56:47 CEST 2018
+base.0=C\:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\2
 path.0=classes.dex
 renamed.0=classes.dex

@@ -1,10 +1,29 @@
 {
     "logs": [
         {
-            "outputFile": "E:\\MusicPlayer1\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\values\\strings.xml",
+                    "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "6,15",
+                        "startColumns": "4,4",
+                        "startOffsets": "192,525",
+                        "endLines": "12,17",
+                        "endColumns": "12,12",
+                        "endOffsets": "484,682"
+                    },
+                    "to": {
+                        "startLines": "18,25",
+                        "startColumns": "4,4",
+                        "startOffsets": "801,1092",
+                        "endLines": "24,27",
+                        "endColumns": "12,12",
+                        "endOffsets": "1087,1247"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\values\\strings.xml",
                     "from": {
                         "startLines": "15,13,14,17,18,19,2,3,10,9,7,8,4,5,6,11",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -18,25 +37,6 @@
                         "startOffsets": "55,98,139,179,223,273,326,376,414,484,522,560,616,656,694,742",
                         "endColumns": "42,40,39,43,49,52,49,37,69,37,37,55,39,37,47,58",
                         "endOffsets": "93,134,174,218,268,321,371,409,479,517,555,611,651,689,737,796"
-                    }
-                },
-                {
-                    "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "6,15",
-                        "startColumns": "4,4",
-                        "startOffsets": "191,522",
-                        "endLines": "12,17",
-                        "endColumns": "12,12",
-                        "endOffsets": "481,679"
-                    },
-                    "to": {
-                        "startLines": "18,25",
-                        "startColumns": "4,4",
-                        "startOffsets": "801,1092",
-                        "endLines": "24,27",
-                        "endColumns": "12,12",
-                        "endOffsets": "1087,1247"
                     }
                 }
             ]

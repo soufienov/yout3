@@ -1,82 +1,82 @@
 [
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_pause.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\ic_action_pause.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\layout_audio_player.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\layout\\audio_player.xml"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_remove.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\ic_action_remove.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_default_album_art_thumb.jpg.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\default_album_art_thumb.jpg"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_default_album_art_thumb.jpg.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\default_album_art_thumb.jpg"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_previous.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\ic_action_previous.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_previous.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\ic_action_previous.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_play.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\ic_action_play.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_default_album_art.jpg.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\default_album_art.jpg"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_music.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\ic_music.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_notification.xml.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\layout\\custom_notification.xml"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\layout_big_notification.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\layout\\big_notification.xml"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_play.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\ic_action_play.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_remove.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\ic_action_remove.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mydivider.xml.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable\\mydivider.xml"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_music.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\ic_music.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_launcher.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_notification.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\layout\\custom_notification.xml"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_default_album_art.jpg.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\default_album_art.jpg"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable_mydivider.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable\\mydivider.xml"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\layout_big_notification.xml.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\layout\\big_notification.xml"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_stop.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\ic_action_stop.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_stop.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\ic_action_stop.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_next.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\ic_action_next.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_list.xml.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\layout\\custom_list.xml"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\layout_audio_player.xml.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\layout\\audio_player.xml"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\layout_custom_list.xml.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\layout\\custom_list.xml"
     },
     {
-        "merged": "E:\\MusicPlayer1\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_next.png.flat",
-        "source": "E:\\MusicPlayer1\\app\\src\\main\\res\\drawable-hdpi\\ic_action_next.png"
+        "merged": "C:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_action_pause.png.flat",
+        "source": "C:\\Users\\user\\Desktop\\yout3\\app\\src\\main\\res\\drawable-hdpi\\ic_action_pause.png"
     }
 ]

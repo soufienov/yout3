@@ -1,17 +1,17 @@
 #Internal package file, do not edit.
-#Fri Apr 06 20:17:29 GMT+01:00 2018
-2.base=E\:\\MusicPlayer1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
+#Wed May 16 15:56:49 CEST 2018
+2.base=C\:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
 5.set=DEX
 0.path=classes.dex
 2.baseType=DIRECTORY
-3.base=E\:\\MusicPlayer1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
+3.base=C\:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\14
 2.set=DEX
 1.path=classes.dex
-4.base=E\:\\MusicPlayer1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
+4.base=C\:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\13
 count=6
 5.baseType=DIRECTORY
 2.path=classes.dex
-5.base=E\:\\MusicPlayer1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
+5.base=C\:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\16
 4.set=DEX
 3.path=classes.dex
 3.baseType=DIRECTORY
@@ -19,9 +19,9 @@ count=6
 4.path=classes.dex
 1.baseType=DIRECTORY
 5.path=classes.dex
-0.base=E\:\\MusicPlayer1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
+0.base=C\:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\12
 0.baseType=DIRECTORY
 3.set=DEX
-1.base=E\:\\MusicPlayer1\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\11
+1.base=C\:\\Users\\user\\Desktop\\yout3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\15
 4.baseType=DIRECTORY
 0.set=DEX

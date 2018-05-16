@@ -1,4 +1,4 @@
-com.tutorialsface.audioplayer
+com.tutorialsface.yoump3
 int color opaque 0x7f010000
 int color orange 0x7f010001
 int color white 0x7f010002

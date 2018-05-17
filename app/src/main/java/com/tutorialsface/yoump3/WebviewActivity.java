@@ -7,6 +7,7 @@ package com.tutorialsface.yoump3;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 
@@ -26,13 +27,14 @@ public class WebviewActivity extends Activity {
         WebSettings webSettings = mWebView.getSettings();
         webSettings.setJavaScriptEnabled(true);
         Intent current= getIntent();
-        String title= current.getStringExtra("title");
+        String title="convert3";// current.getStringExtra("title");
         String url=current.getStringExtra("link");
         mInterstitialAd = new InterstitialAd(this);
         mInterstitialAd.setAdUnitId("ca-app-pub-7106139341895351/6460814186");
+        Log.e("3url",url);
         mWebView.loadUrl(url);
 
-        mInterstitialAd.loadAd(new AdRequest.Builder().build());
+//        mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
         mInterstitialAd.setAdListener(new AdListener() {
             @Override

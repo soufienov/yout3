@@ -18,6 +18,7 @@ import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.media.RemoteControlClient;
 import android.media.RemoteControlClient.MetadataEditor;
+import android.net.Uri;
 import android.os.Handler;
 import android.os.Handler.Callback;
 import android.os.IBinder;
@@ -25,6 +26,7 @@ import android.os.Message;
 import android.support.v4.app.NotificationCompat;
 import android.util.Log;
 import android.view.View;
+import android.webkit.WebView;
 import android.widget.RemoteViews;
 
 import com.android.volley.DefaultRetryPolicy;
@@ -37,6 +39,7 @@ import com.android.volley.toolbox.Volley;
 import com.tutorialsface.yoump3.AudioPlayerActivity;
 import com.tutorialsface.yoump3.MainActivity;
 import com.tutorialsface.yoump3.R;
+import com.tutorialsface.yoump3.WebviewActivity;
 import com.tutorialsface.yoump3.controls.Controls;
 import com.tutorialsface.yoump3.receiver.NotificationBroadcast;
 import com.tutorialsface.yoump3.util.MediaItem;
@@ -53,7 +56,7 @@ public class SongService extends Service implements AudioManager.OnAudioFocusCha
 	public static final String NOTIFY_PLAY = "com.tutorialsface.yoump3.play";
 	public static final String NOTIFY_NEXT = "com.tutorialsface.yoump3.next";
 	private static final int MY_SOCKET_TIMEOUT_MS = 20000;
-
+String songPath="";
 	private ComponentName remoteComponentName;
 	private RemoteControlClient remoteControlClient;
 	AudioManager audioManager;
@@ -191,7 +194,7 @@ public class SongService extends Service implements AudioManager.OnAudioFocusCha
 						String nwresp = response.substring(st + 3);
 						int end = nwresp.indexOf("'");
 						nwresp = nwresp.substring(0, end);
-						String songPath = nwresp;
+						 songPath = nwresp;
 							playSong(songPath, data);
 							MainActivity.changeUI();
 							AudioPlayerActivity.changeUI();
@@ -199,7 +202,7 @@ public class SongService extends Service implements AudioManager.OnAudioFocusCha
 							//path = nwresp;
 						} catch (Exception e) {
 							e.printStackTrace();
-							loadiframe();
+							loadiframe(songPath);
 
 						}
 					}
@@ -207,7 +210,7 @@ public class SongService extends Service implements AudioManager.OnAudioFocusCha
 			@Override
 			public void onErrorResponse(VolleyError error) {                       //     progressBar.setVisibility(View.GONE);
 
-				loadiframe();
+				loadiframe(songPath);
 			}
 		});
 // Add the request to the RequestQueue.
@@ -219,7 +222,12 @@ public class SongService extends Service implements AudioManager.OnAudioFocusCha
 
 	}
 
-	private void loadiframe() {
+	private void loadiframe( String songpath) {
+		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(songpath));
+		startActivity(browserIntent);
+    	/*Intent intent= new Intent(this,WebviewActivity.class);
+    	intent.putExtra("link","www.google.com");
+    	startActivity(intent);*/
     	Log.e("error_reading","open ifreame");
 	}
 	/**

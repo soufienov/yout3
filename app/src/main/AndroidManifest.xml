@@ -31,7 +31,11 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="com.tutorialsface.yoump3.WebviewActivity"
 
+            >
+        </activity>
         <service
             android:name="com.tutorialsface.yoump3.service.SongService"
             android:exported="true" 

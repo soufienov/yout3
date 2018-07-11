@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 import android.annotation.SuppressLint;
+import android.app.AlertDialog;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
@@ -130,6 +131,7 @@ String songPath="";
 			PlayerConstants.SONG_CHANGE_HANDLER = new Handler(new Callback() {
 				@Override
 				public boolean handleMessage(Message msg) {
+					PlayerConstants.BROWSER_OPENED=false;
 					MediaItem data = PlayerConstants.SONGS_LIST.get(PlayerConstants.SONG_NUMBER);
 					getmp3(data,getApplicationContext());
 					/*newNotification();
@@ -195,22 +197,33 @@ String songPath="";
 						int end = nwresp.indexOf("'");
 						nwresp = nwresp.substring(0, end);
 						 songPath = nwresp;
+							Log.e("pre-xception ===>",songPath);
+
 							playSong(songPath, data);
-							MainActivity.changeUI();
-							AudioPlayerActivity.changeUI();
+
 							newNotification();
 							//path = nwresp;
 						} catch (Exception e) {
+							Log.e("execption ===>",songPath);
+
 							e.printStackTrace();
 							loadiframe(songPath);
 
 						}
+						try{
+						MainActivity.changeUI();
+						AudioPlayerActivity.changeUI();}
+						catch (Exception e){e.printStackTrace();}
 					}
 				}, new Response.ErrorListener() {
 			@Override
 			public void onErrorResponse(VolleyError error) {                       //     progressBar.setVisibility(View.GONE);
 
-				loadiframe(songPath);
+				AlertDialog.Builder alertDialog=new AlertDialog.Builder(getApplicationContext());
+
+				alertDialog.setTitle("Error");
+				alertDialog.setMessage("Please check your internet and try again");
+			alertDialog.show();
 			}
 		});
 // Add the request to the RequestQueue.
@@ -223,12 +236,16 @@ String songPath="";
 	}
 
 	private void loadiframe( String songpath) {
-		Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(songpath));
+		Log.e("iframe",songpath);
+    	if(PlayerConstants.BROWSER_OPENED==false)
+		{	Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(songpath));
 		startActivity(browserIntent);
     	/*Intent intent= new Intent(this,WebviewActivity.class);
     	intent.putExtra("link","www.google.com");
     	startActivity(intent);*/
     	Log.e("error_reading","open ifreame");
+		PlayerConstants.BROWSER_OPENED=true;
+		}
 	}
 	/**
 	 * Notification
@@ -342,12 +359,14 @@ String songPath="";
 	 */
 	@SuppressLint("NewApi")
 	private void playSong(String songPath, MediaItem data) {
+		PlayerConstants.TRIES++;
 		try {
 			if(currentVersionSupportLockScreenControls){
 				UpdateMetadata(data);
 				remoteControlClient.setPlaybackState(RemoteControlClient.PLAYSTATE_PLAYING);
 			}
 			mp.reset();
+			Log.e("player ===>",songPath);
 			mp.setDataSource(songPath);
 			mp.prepare();
 			mp.start();
@@ -355,7 +374,11 @@ String songPath="";
 		} catch (IOException e) {
 			//e.printStackTrace();
 			Log.e("err","from here!!");
+			if(PlayerConstants.TRIES<3)
+			playSong(songPath,data);
+			else loadiframe(songPath);
 		}
+		PlayerConstants.BROWSER_OPENED=true;
 	}
 	@SuppressLint("NewApi")
 	private void RegisterRemoteClient(){

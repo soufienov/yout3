@@ -10,6 +10,8 @@ public class PlayerConstants {
 	public static int SONG_NUMBER = 0;
 	//song is playing or paused
 	public static boolean SONG_PAUSED = true;
+	public static  boolean BROWSER_OPENED= false;
+	public static int TRIES=0;
 	//song changed (next, previous)
 	public static boolean SONG_CHANGED = false;
 	//handler for song changed(next, previous) defined in service(SongService)

@@ -29,6 +29,9 @@ import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.tutorialsface.yoump3.adapter.CustomAdapter;
 import com.tutorialsface.yoump3.controls.Controls;
 import com.tutorialsface.yoump3.service.SongService;
@@ -64,15 +67,27 @@ public class MainActivity extends Activity {
 	String title;
 	private static final int MY_SOCKET_TIMEOUT_MS = 20000;
 SearchView searchView;
+	private AdView mAdView;
+	private InterstitialAd mInterstitialAd;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		getActionBar().hide();
 		setContentView(R.layout.activity_main);
 		context = MainActivity.this;
+
 		searchView=(SearchView)findViewById(R.id.searchView);    
 		searchView.setQueryHint("Search Videos");
-searchView.setIconified(false);
+		mAdView = findViewById(R.id.adView);
+
+		AdRequest adRequest = new AdRequest.Builder().build();
+		mAdView.loadAd(adRequest);
+		mInterstitialAd = new InterstitialAd(this);
+		mInterstitialAd.setAdUnitId("ca-app-pub-7106139341895351/4988118027");
+		mInterstitialAd.loadAd(new AdRequest.Builder().build());
+
+		searchView.setIconified(false);
 		        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
             @Override
@@ -202,6 +217,9 @@ searchView.setIconified(false);
 	@Override
 	protected void onResume() {
 		super.onResume();
+		if (mInterstitialAd.isLoaded()) {
+			mInterstitialAd.show();
+		}
 		try{
 	    	boolean isServiceRunning = UtilFunctions.isServiceRunning(SongService.class.getName(), getApplicationContext());
 			if (isServiceRunning) {
@@ -272,7 +290,9 @@ searchView.setIconified(false);
 								PlayerConstants.SONGS_LIST.add(art);
 							}
 							setListItems();
-
+							if (mInterstitialAd.isLoaded()) {
+								mInterstitialAd.show();
+							}
 
 							//progressBar.setVisibility(View.GONE);
 						}

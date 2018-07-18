@@ -38,6 +38,7 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
 import com.tutorialsface.yoump3.AudioPlayerActivity;
+import com.tutorialsface.yoump3.AudioProxy;
 import com.tutorialsface.yoump3.MainActivity;
 import com.tutorialsface.yoump3.R;
 import com.tutorialsface.yoump3.WebviewActivity;
@@ -46,6 +47,7 @@ import com.tutorialsface.yoump3.receiver.NotificationBroadcast;
 import com.tutorialsface.yoump3.util.MediaItem;
 import com.tutorialsface.yoump3.util.PlayerConstants;
 import com.tutorialsface.yoump3.util.UtilFunctions;
+import static com.tutorialsface.yoump3.AudioPlayerActivity.context;
 
 public class SongService extends Service implements AudioManager.OnAudioFocusChangeListener{
 	String LOG_CLASS = "SongService";
@@ -75,17 +77,21 @@ String songPath="";
 	public void onCreate() {
 		mp = new MediaPlayer();
         audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
-        
+
         currentVersionSupportBigNotification = UtilFunctions.currentVersionSupportBigNotification();
         currentVersionSupportLockScreenControls = UtilFunctions.currentVersionSupportLockScreenControls();
         timer = new Timer();
         mp.setOnCompletionListener(new OnCompletionListener() {
 			@Override
 			public void onCompletion(MediaPlayer mp) {
-				Controls.nextControl(getApplicationContext());		
+				if(PlayerConstants.AUTONEXT)
+				Controls.nextControl(getApplicationContext());
+				mp.setLooping(PlayerConstants.AUTOREPLAY);
+
 			}
 		});
 		super.onCreate();
+
 	}
 
 	/**
@@ -366,10 +372,11 @@ String songPath="";
 				remoteControlClient.setPlaybackState(RemoteControlClient.PLAYSTATE_PLAYING);
 			}
 			mp.reset();
-			Log.e("player ===>",songPath);
+
 			mp.setDataSource(songPath);
 			mp.prepare();
 			mp.start();
+
 			timer.scheduleAtFixedRate(new MainTask(), 0, 100);
 		} catch (IOException e) {
 			//e.printStackTrace();

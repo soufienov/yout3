@@ -21,7 +21,13 @@
         android:layout_height="wrap_content"
         android:layout_weight="1"
         android:background="@android:color/transparent" />
-
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:src="@drawable/my_settings"
+        android:layout_margin="16dp" />
     <LinearLayout
         android:id="@+id/linearLayoutPlayingSong"
         android:layout_width="match_parent"

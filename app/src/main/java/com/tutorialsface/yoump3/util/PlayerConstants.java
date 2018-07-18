@@ -12,6 +12,11 @@ public class PlayerConstants {
 	public static boolean SONG_PAUSED = true;
 	public static  boolean BROWSER_OPENED= false;
 	public static int TRIES=0;
+	public static String MAXRES="30";
+
+	public static boolean AUTOREPLAY=false;
+	public static boolean AUTONEXT=false;
+
 	//song changed (next, previous)
 	public static boolean SONG_CHANGED = false;
 	//handler for song changed(next, previous) defined in service(SongService)

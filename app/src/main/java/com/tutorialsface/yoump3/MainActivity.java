@@ -9,6 +9,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.design.widget.FloatingActionButton;
+import android.support.design.widget.Snackbar;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -59,7 +61,7 @@ public class MainActivity extends Activity {
 	static Context context;
 	private String criteria="relevance";
 	private String vidLen="any";
-	private String maxres="30";
+	private String maxres=PlayerConstants.MAXRES;
 	String url;
 	Intent playerIntent;
 	String key="AIzaSyCE9NTL-TERQeWcz8M_VLGsqvCpNBo45FY";
@@ -73,7 +75,7 @@ SearchView searchView;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getActionBar().hide();
+//		getActionBar().hide();
 		setContentView(R.layout.activity_main);
 		context = MainActivity.this;
 
@@ -86,7 +88,14 @@ SearchView searchView;
 		mInterstitialAd = new InterstitialAd(this);
 		mInterstitialAd.setAdUnitId("ca-app-pub-7106139341895351/4988118027");
 		mInterstitialAd.loadAd(new AdRequest.Builder().build());
-
+		FloatingActionButton fab = findViewById(R.id.fab);
+		fab.setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View view) {
+			Intent i=new Intent(getApplicationContext(),SettingsActivity.class);
+			startActivityForResult(i,0);
+			}
+		});
 		searchView.setIconified(false);
 		        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 

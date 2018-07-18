@@ -18,4 +18,15 @@
     <dimen name="button_width">32dp</dimen>
     <dimen name="small_button_width">28dp</dimen>
     <dimen name="small_image_art_width">85dp</dimen>
-</resources>
+        <string-array name="criteria_array">
+            <item>Mercury</item>
+            <item>Venus</item>
+            <item>Earth</item>
+            <item>Mars</item>
+            <item>Jupiter</item>
+            <item>Saturn</item>
+            <item>Uranus</item>
+            <item>Neptune</item>
+        </string-array>
+
+</resources>

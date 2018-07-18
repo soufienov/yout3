@@ -30,7 +30,7 @@ public class AudioPlayerActivity extends Activity {
 	static TextView textComposer;
 	static LinearLayout linearLayoutPlayer;
 	ProgressBar progressBar;
-	static Context context;
+	public static Context context;
 	TextView textBufferDuration, textDuration;
 	
 	@Override

@@ -5,77 +5,77 @@
     build-mode="COLD"
     density="xxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
+    ir-eligibility="CLASS_ADDED"
     plugin-version="3.0.1"
-    timestamp="1531920559699"
-    token="-7002315826047024908"
+    timestamp="1531944119294"
+    token="-6411413134688558323"
     verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
-        duration="2174" />
+        duration="7085" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="33" />
+        duration="406" />
     <task
         name="verifier"
-        duration="5" />
+        duration="157" />
 
     <artifact
-        location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+        location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
         type="SPLIT" />
 
     <build
         build-mode="FULL"
-        timestamp="1531920445678"
+        timestamp="1531942912964"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\outputs\apk\debug\app-debug.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\outputs\apk\debug\app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1531920559699"
+        ir-eligibility="CLASS_ADDED"
+        timestamp="1531944119294"
         verifier="COLD_SWAP_REQUESTED" >
         <artifact
-            location="C:\Users\user\Desktop\yout3\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="C:\Users\sofiene\workspace\yout3\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
             type="SPLIT" />
     </build>
 

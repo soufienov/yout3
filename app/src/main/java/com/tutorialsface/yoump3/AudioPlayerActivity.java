@@ -1,13 +1,21 @@
 package com.tutorialsface.yoump3;
 
+import android.Manifest;
 import android.app.Activity;
+import android.app.DownloadManager;
 import android.content.Context;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
+import android.support.v4.app.ActivityCompat;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -36,7 +44,7 @@ public class AudioPlayerActivity extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		getActionBar().hide();
+//		getActionBar().hide();
 		setContentView(R.layout.audio_player);
 		context = this;
 		init();
@@ -58,6 +66,7 @@ public class AudioPlayerActivity extends Activity {
 	}
 
 	private void setListeners() {
+
 		btnBack.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -158,4 +167,5 @@ public class AudioPlayerActivity extends Activity {
 			e.printStackTrace();
 		}
 	}
+
 }

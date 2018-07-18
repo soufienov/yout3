@@ -1,16 +1,23 @@
 package com.tutorialsface.yoump3;
 
+import android.Manifest;
 import android.app.Activity;
+import android.app.DownloadManager;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.drawable.BitmapDrawable;
+import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -49,7 +56,7 @@ public class MainActivity extends Activity {
 	String LOG_CLASS = "MainActivity";
 	CustomAdapter customAdapter = null;
 	static TextView playingSong;
-	Button btnPlayer;
+	Button btnPlayer,btnDownload;
 	static Button btnPause, btnPlay, btnNext, btnPrevious;
 	Button btnStop;
 	LinearLayout mediaLayout;
@@ -136,6 +143,8 @@ SearchView searchView;
 	}
 	
 	private void getViews() {
+		btnDownload=(Button)findViewById(R.id.btnMusicPlayer);
+
 		playingSong = (TextView) findViewById(R.id.textNowPlaying);
 		btnPlayer = (Button) findViewById(R.id.btnMusicPlayer);
 		mediaListView = (ListView) findViewById(R.id.listViewMusic);
@@ -153,6 +162,12 @@ SearchView searchView;
 	}
 
 	private void setListeners() {
+		btnDownload.setOnClickListener(new OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				doDownload(v);
+			}
+		});
 		 mediaListView.setOnItemClickListener(new AdapterView.OnItemClickListener(){
             @Override
             public void onItemClick(AdapterView<?> parent, View item, int position, long id){
@@ -172,13 +187,7 @@ SearchView searchView;
             }
         });		
 			
-		btnPlayer.setOnClickListener(new OnClickListener() {
-			@Override
-			public void onClick(View v) {
-				Intent i = new Intent(MainActivity.this,AudioPlayerActivity.class);
-				startActivity(i);
-			}
-		});
+
 		btnPlay.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -322,6 +331,51 @@ SearchView searchView;
 				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
 				DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 		queue.add(stringRequest);
+
+	}
+	public void Download(){
+		DownloadManager dm=(DownloadManager)getSystemService(DOWNLOAD_SERVICE);
+
+		DownloadManager.Request request= new DownloadManager.Request(Uri.parse(SongService.songPath));
+		try{                request.setTitle(SongService.title + ".mp3");            request.setNotificationVisibility(DownloadManager.Request.VISIBILITY_VISIBLE_NOTIFY_COMPLETED);
+
+			request.setDestinationInExternalPublicDir(Environment.DIRECTORY_DOWNLOADS, "/Yoump3/"  + SongService.title + ".mp3");
+
+			dm.enqueue(request);}
+		catch (Exception e){
+			Log.e("exp",e.getMessage());}
+	}
+	public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+		super.onRequestPermissionsResult(requestCode, permissions, grantResults);
+		if(grantResults[0]== PackageManager.PERMISSION_GRANTED){
+			//you have the permission now.
+			Download();
+		}
+	}
+	public  boolean haveStoragePermission() {
+		if (Build.VERSION.SDK_INT >= 23) {
+			if (checkSelfPermission(android.Manifest.permission.WRITE_EXTERNAL_STORAGE)
+					== PackageManager.PERMISSION_GRANTED) {
+				Log.e("Permission error","You have permission");Download();
+				return true;
+			} else {
+
+				Log.e("Permission error","You have asked for permission");
+				ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
+				return false;
+			}
+		}
+		else { //you dont need to worry about these stuff below api level 23
+			Log.e("Permission error","You already have the permission");Download();
+			return true;
+		}
+	}
+	public  void  doDownload(View v){
+		// String fileName=title.substring(0,10)+".mp3";
+		//    downloadFile(songId,fileName);
+		//  String[] args={songId,fileName};
+		haveStoragePermission();
+		// new DownloadFileFromURL().execute(args);
 
 	}
 

@@ -1,16 +1,19 @@
 package com.tutorialsface.yoump3.service;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
+import android.app.DownloadManager;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.AudioManager;
@@ -20,6 +23,8 @@ import android.media.MediaPlayer.OnCompletionListener;
 import android.media.RemoteControlClient;
 import android.media.RemoteControlClient.MetadataEditor;
 import android.net.Uri;
+import android.os.Build;
+import android.os.Environment;
 import android.os.Handler;
 import android.os.Handler.Callback;
 import android.os.IBinder;
@@ -59,7 +64,7 @@ public class SongService extends Service implements AudioManager.OnAudioFocusCha
 	public static final String NOTIFY_PLAY = "com.tutorialsface.yoump3.play";
 	public static final String NOTIFY_NEXT = "com.tutorialsface.yoump3.next";
 	private static final int MY_SOCKET_TIMEOUT_MS = 20000;
-String songPath="";
+public static  String songPath="",title;
 	private ComponentName remoteComponentName;
 	private RemoteControlClient remoteControlClient;
 	AudioManager audioManager;
@@ -67,6 +72,7 @@ String songPath="";
 	private static Timer timer; 
 	private static boolean currentVersionSupportBigNotification = false;
 	private static boolean currentVersionSupportLockScreenControls = false;
+	private File song;
 
 	@Override
 	public IBinder onBind(Intent intent) {
@@ -188,6 +194,20 @@ String songPath="";
 	}
 
 	private void getmp3(final MediaItem data, Context context) {
+		title=data.getTitle();
+		song=null;
+		if(hitCache(title)!=null){
+			songPath=song.getPath();
+			playSong(songPath, data);
+
+			newNotification();
+			try{
+				MainActivity.changeUI();
+				AudioPlayerActivity.changeUI();}
+			catch (Exception e){e.printStackTrace();}
+			}
+		else
+		{
 		String urli = "http://youtubeinmp3.me/api/generate.php?id=" + data.getPath();
 		//	progressBar.setVisibility(View.VISIBLE);
 
@@ -238,7 +258,7 @@ String songPath="";
 				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
 				DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
 		queue.add(stringRequest);
-
+}
 	}
 
 	private void loadiframe( String songpath) {
@@ -429,4 +449,11 @@ String songPath="";
 
 	@Override
 	public void onAudioFocusChange(int focusChange) {}
+	
+public File hitCache(String title){
+
+ song=new File(Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_DOWNLOADS)+"/Yoump3/"+title+".mp3");
+if(song.isFile()){return song;}
+else return null;
+}
 }

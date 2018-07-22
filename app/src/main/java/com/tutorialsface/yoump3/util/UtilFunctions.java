@@ -14,6 +14,7 @@ import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
+import android.os.Environment;
 import android.os.ParcelFileDescriptor;
 import android.provider.MediaStore;
 import android.util.Log;
@@ -148,5 +149,39 @@ public class UtilFunctions {
 			return true;
 		}
 		return false;
+	}
+
+	public static ArrayList<MediaItem> listOfDownloadedSongs(Context applicationContext) {
+		Uri uri = MediaStore.Audio.Media.EXTERNAL_CONTENT_URI;
+		Cursor c = applicationContext.getContentResolver().query(uri, null, MediaStore.Audio.Media.IS_MUSIC + " != 0", null, null);
+		ArrayList<MediaItem> listOfSongs = new ArrayList<MediaItem>();
+		c.moveToFirst();
+		while(c.moveToNext()){
+			MediaItem songData = new MediaItem();
+			String data = c.getString(c.getColumnIndex(MediaStore.Audio.Media.DATA));
+			Log.e("datapath",data);
+			if(data.contains("/Yoump3/")){
+	String title = c.getString(c.getColumnIndex(MediaStore.Audio.Media.TITLE));
+			String artist = c.getString(c.getColumnIndex(MediaStore.Audio.Media.ARTIST));
+			String album = c.getString(c.getColumnIndex(MediaStore.Audio.Media.ALBUM));
+			long duration = c.getLong(c.getColumnIndex(MediaStore.Audio.Media.DURATION));
+
+
+				long albumId = c.getLong(c.getColumnIndex(MediaStore.Audio.Media.ALBUM_ID));
+			String composer = c.getString(c.getColumnIndex(MediaStore.Audio.Media.COMPOSER));
+
+			songData.setTitle(title);
+			songData.setAlbum(album);
+			songData.setArtist(artist);
+			songData.setDuration(duration);
+			songData.setPath(data);
+			songData.setAlbumId(albumId);
+			songData.setComposer(composer);
+
+			listOfSongs.add(songData);}
+		}
+		c.close();
+		Log.d("SIZE", "SIZE: " + listOfSongs.size());
+		return listOfSongs;
 	}
 }

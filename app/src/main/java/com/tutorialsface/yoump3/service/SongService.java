@@ -6,14 +6,12 @@ import java.util.Timer;
 import java.util.TimerTask;
 import android.annotation.SuppressLint;
 import android.app.AlertDialog;
-import android.app.DownloadManager;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.AudioManager;
@@ -52,14 +50,23 @@ import com.tutorialsface.yoump3.receiver.NotificationBroadcast;
 import com.tutorialsface.yoump3.util.MediaItem;
 import com.tutorialsface.yoump3.util.PlayerConstants;
 import com.tutorialsface.yoump3.util.UtilFunctions;
-import static com.tutorialsface.yoump3.AudioPlayerActivity.context;
 
 public class SongService extends Service implements AudioManager.OnAudioFocusChangeListener{
 	String LOG_CLASS = "SongService";
-	private MediaPlayer mp;
+
+	public static MediaPlayer getMp() {
+		return mp;
+	}
+
+	private static MediaPlayer mp;
 	int NOTIFICATION_ID = 1111;
 	public static final String NOTIFY_PREVIOUS = "com.tutorialsface.yoump3.previous";
 	public static final String NOTIFY_DELETE = "com.tutorialsface.yoump3.delete";
+
+	public static void setMp(MediaPlayer mp) {
+		SongService.mp = mp;
+	}
+
 	public static final String NOTIFY_PAUSE = "com.tutorialsface.yoump3.pause";
 	public static final String NOTIFY_PLAY = "com.tutorialsface.yoump3.play";
 	public static final String NOTIFY_NEXT = "com.tutorialsface.yoump3.next";
@@ -83,7 +90,7 @@ public static  String songPath="",title;
 	public void onCreate() {
 		mp = new MediaPlayer();
         audioManager = (AudioManager) getSystemService(AUDIO_SERVICE);
-
+Log.e("looping",mp.isLooping()+"");
         currentVersionSupportBigNotification = UtilFunctions.currentVersionSupportBigNotification();
         currentVersionSupportLockScreenControls = UtilFunctions.currentVersionSupportLockScreenControls();
         timer = new Timer();
@@ -93,7 +100,7 @@ public static  String songPath="",title;
 				if(PlayerConstants.AUTONEXT)
 				Controls.nextControl(getApplicationContext());
 				mp.setLooping(PlayerConstants.AUTOREPLAY);
-
+				Log.e("looping1111",mp.isLooping()+"");
 			}
 		});
 		super.onCreate();
@@ -196,6 +203,8 @@ public static  String songPath="",title;
 	private void getmp3(final MediaItem data, Context context) {
 		title=data.getTitle();
 		song=null;
+		MainActivity.btnDownload.setVisibility(View.GONE);
+
 		if(hitCache(title)!=null){
 			songPath=song.getPath();
 			playSong(songPath, data);
@@ -396,8 +405,10 @@ public static  String songPath="",title;
 			mp.setDataSource(songPath);
 			mp.prepare();
 			mp.start();
-
 			timer.scheduleAtFixedRate(new MainTask(), 0, 100);
+			if(!song.isFile())
+			MainActivity.btnDownload.setVisibility(View.VISIBLE);
+
 		} catch (IOException e) {
 			//e.printStackTrace();
 			Log.e("err","from here!!");

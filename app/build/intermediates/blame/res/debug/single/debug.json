@@ -1172,6 +1172,10 @@
         "source": "C:\\Users\\sofiene\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\44c235c8c09f986d67a3b1bfb2d81776\\res\\drawable-xhdpi-v4\\abc_ab_share_pack_mtrl_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\sofiene\\workspace\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseline_toggle_off_black_18dp.png.flat",
+        "source": "C:\\Users\\sofiene\\workspace\\yout3\\app\\src\\main\\res\\drawable\\baseline_toggle_off_black_18dp.png"
+    },
+    {
         "merged": "C:\\Users\\sofiene\\workspace\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "C:\\Users\\sofiene\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.1.1.aar\\44c235c8c09f986d67a3b1bfb2d81776\\res\\drawable-xhdpi-v4\\abc_scrubber_control_to_pressed_mtrl_005.png"
     },
@@ -1406,6 +1410,10 @@
     {
         "merged": "C:\\Users\\sofiene\\workspace\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21_design_bottom_sheet_slide_out.xml.flat",
         "source": "C:\\Users\\sofiene\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.1.1.aar\\c19237b7a8249599ee8b8d0885f0bd68\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+    },
+    {
+        "merged": "C:\\Users\\sofiene\\workspace\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable_baseline_toggle_on_black_18dp.png.flat",
+        "source": "C:\\Users\\sofiene\\workspace\\yout3\\app\\src\\main\\res\\drawable\\baseline_toggle_on_black_18dp.png"
     },
     {
         "merged": "C:\\Users\\sofiene\\workspace\\yout3\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",

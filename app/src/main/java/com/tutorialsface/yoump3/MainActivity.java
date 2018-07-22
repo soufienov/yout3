@@ -56,7 +56,8 @@ public class MainActivity extends Activity {
 	String LOG_CLASS = "MainActivity";
 	CustomAdapter customAdapter = null;
 	static TextView playingSong;
-	Button btnPlayer,btnDownload;
+	Button btnPlayer;
+	public static Button btnDownload;
 	static Button btnPause, btnPlay, btnNext, btnPrevious;
 	Button btnStop;
 	LinearLayout mediaLayout;
@@ -86,8 +87,7 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 //		getActionBar().hide();
 		setContentView(R.layout.activity_main);
 		context = MainActivity.this;
-
-		searchView=(SearchView)findViewById(R.id.searchView);    
+		searchView=(SearchView)findViewById(R.id.searchView);
 		searchView.setQueryHint("Search Videos");
 		mAdView = findViewById(R.id.adView);
 
@@ -96,29 +96,8 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 		mInterstitialAd = new InterstitialAd(this);
 		mInterstitialAd.setAdUnitId("ca-app-pub-7106139341895351/4988118027");
 		mInterstitialAd.loadAd(new AdRequest.Builder().build());
-		 materialDesignFAM = (FloatingActionMenu) findViewById(R.id.material_design_android_floating_action_menu);
-        floatingActionButton1 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item1);
-        floatingActionButton2 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item2);
-        floatingActionButton3 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item3);
 
-        floatingActionButton1.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                //TODO something when floating action menu first item clicked
 
-            }
-        });
-        floatingActionButton2.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                //TODO something when floating action menu second item clicked
-
-            }
-        });
-        floatingActionButton3.setOnClickListener(new View.OnClickListener() {
-            public void onClick(View v) {
-                //TODO something when floating action menu third item clicked
-
-            }
-});
 		searchView.setIconified(false);
 		        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
@@ -136,7 +115,8 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
         });
 
 		try {
-			init();
+			init();		Log.e("height",materialDesignFAM.getLayoutParams().height+"");
+
 		} catch (JSONException e) {
 			e.printStackTrace();
 		}
@@ -148,7 +128,7 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 		playingSong.setSelected(true);
 		progressBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.white), Mode.SRC_IN);
 		if(PlayerConstants.SONGS_LIST.size() <= 0){
-			PlayerConstants.SONGS_LIST = UtilFunctions.listOfSongs(getApplicationContext());
+			PlayerConstants.SONGS_LIST = UtilFunctions.listOfDownloadedSongs(getApplicationContext());
 		}
     }
 
@@ -160,6 +140,10 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 	
 	private void getViews() {
 		btnDownload=(Button)findViewById(R.id.btnMusicPlayer);
+		materialDesignFAM = (FloatingActionMenu) findViewById(R.id.material_design_android_floating_action_menu);
+		floatingActionButton1 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item1);
+		floatingActionButton2 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item2);
+		floatingActionButton3 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item3);
 
 		playingSong = (TextView) findViewById(R.id.textNowPlaying);
 		btnPlayer = (Button) findViewById(R.id.btnMusicPlayer);
@@ -178,6 +162,49 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 	}
 
 	private void setListeners() {
+		materialDesignFAM.setClosedOnTouchOutside(true);
+
+		floatingActionButton1.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				PlayerConstants.AUTOREPLAY= !PlayerConstants.AUTOREPLAY;
+				SongService.getMp().setLooping(PlayerConstants.AUTOREPLAY);
+				if(PlayerConstants.AUTOREPLAY)
+
+				{PlayerConstants.AUTONEXT= false;
+				floatingActionButton1.setImageResource(R.drawable.baseline_toggle_on_black_18dp);
+					floatingActionButton2.setImageResource(R.drawable.baseline_toggle_off_black_18dp);
+				}
+				else
+				floatingActionButton1.setImageResource(R.drawable.baseline_toggle_off_black_18dp);
+
+			}
+		});
+		floatingActionButton2.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+				PlayerConstants.AUTONEXT= !PlayerConstants.AUTONEXT;
+				if(PlayerConstants.AUTONEXT)
+				{PlayerConstants.AUTOREPLAY= false;
+					SongService.getMp().setLooping(PlayerConstants.AUTOREPLAY);
+
+					floatingActionButton2.setImageResource(R.drawable.baseline_toggle_on_black_18dp);
+					floatingActionButton1.setImageResource(R.drawable.baseline_toggle_off_black_18dp);
+				}
+				else
+				floatingActionButton2.setImageResource(R.drawable.baseline_toggle_off_black_18dp);
+
+
+			}
+		});
+		floatingActionButton3.setOnClickListener(new View.OnClickListener() {
+			public void onClick(View v) {
+
+
+					PlayerConstants.SONGS_LIST = UtilFunctions.listOfDownloadedSongs(getApplicationContext());
+
+			setListItems();
+			materialDesignFAM.close(true);
+			}
+		});
 		btnDownload.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {

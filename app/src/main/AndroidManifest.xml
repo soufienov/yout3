@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tutorialsface.yoump3"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    package="com.soufienov.yoump3"
+    android:versionCode="6"
+    android:versionName="6.0" >
 
     <uses-sdk
         android:minSdkVersion="11"
@@ -17,7 +17,7 @@
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat" >
         <activity
-            android:name="com.tutorialsface.yoump3.MainActivity"
+            android:name=".MainActivity"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
             <intent-filter>
@@ -27,28 +27,28 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.tutorialsface.yoump3.AudioPlayerActivity"
+            android:name=".AudioPlayerActivity"
             android:excludeFromRecents="true"
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
         <activity
-            android:name="com.tutorialsface.yoump3.SettingsActivity"
+            android:name=".SettingsActivity"
 
             >
         </activity>
         <service
-            android:name="com.tutorialsface.yoump3.service.SongService"
+            android:name=".service.SongService"
             android:exported="true" 
             android:enabled="true"/>
 
-        <receiver android:name="com.tutorialsface.yoump3.receiver.NotificationBroadcast" >
+        <receiver android:name=".receiver.NotificationBroadcast" >
             <intent-filter>
-                <action android:name="com.tutorialsface.yoump3.delete" />
-                <action android:name="com.tutorialsface.yoump3.pause" />
-                <action android:name="com.tutorialsface.yoump3.next" />
-                <action android:name="com.tutorialsface.yoump3.play" />
-                <action android:name="com.tutorialsface.yoump3.previous" />
+                <action android:name="com.soufienov.yoump3.delete" />
+                <action android:name="com.soufienov.yoump3.pause" />
+                <action android:name="com.soufienov.yoump3.next" />
+                <action android:name="com.soufienov.yoump3.play" />
+                <action android:name="com.soufienov.yoump3.previous" />
                 <action android:name="android.intent.action.MEDIA_BUTTON" />
             </intent-filter>
         </receiver>

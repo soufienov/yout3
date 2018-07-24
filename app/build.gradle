@@ -5,7 +5,7 @@ android {
     buildToolsVersion "27.0.3"
 
     defaultConfig {
-        applicationId "com.tutorialsface.yoump3"
+        applicationId "com.soufienov.yoump3"
         minSdkVersion 14
         targetSdkVersion 22
     }

@@ -201,11 +201,13 @@ Log.e("looping",mp.isLooping()+"");
 	}
 
 	private void getmp3(final MediaItem data, Context context) {
+    	MainActivity.showLoading(true);
 		title=data.getTitle();
 		song=null;
 		MainActivity.btnDownload.setVisibility(View.GONE);
 
 		if(hitCache(title)!=null){
+			MainActivity.showLoading(false);
 			songPath=song.getPath();
 			playSong(songPath, data);
 
@@ -224,7 +226,8 @@ Log.e("looping",mp.isLooping()+"");
 		StringRequest stringRequest = new StringRequest(Request.Method.GET, urli,
 				new Response.Listener<String>() {
 					@Override
-					public void onResponse(String response) {
+					public void onResponse(String response) {			MainActivity.showLoading(false);
+
 						// Display the first 500 characters of the response string.
 						Log.e("mp3 link",response);
 						try {int st = response.indexOf("n('");
@@ -253,6 +256,7 @@ Log.e("looping",mp.isLooping()+"");
 				}, new Response.ErrorListener() {
 			@Override
 			public void onErrorResponse(VolleyError error) {                       //     progressBar.setVisibility(View.GONE);
+				MainActivity.showLoading(false);
 
 				AlertDialog.Builder alertDialog=new AlertDialog.Builder(getApplicationContext());
 

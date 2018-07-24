@@ -20,8 +20,10 @@ import android.support.v4.app.ActivityCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.animation.AlphaAnimation;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
@@ -81,6 +83,10 @@ SearchView searchView;
 	private InterstitialAd mInterstitialAd;
 FloatingActionMenu materialDesignFAM;
 FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActionButton3;
+	public static AlphaAnimation outAnimation;
+	public static FrameLayout progressBarHolder;
+	public static AlphaAnimation inAnimation;
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -144,11 +150,11 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 		floatingActionButton1 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item1);
 		floatingActionButton2 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item2);
 		floatingActionButton3 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item3);
-
+progressBarHolder =(FrameLayout)findViewById(R.id.progressBarHolder) ;
 		playingSong = (TextView) findViewById(R.id.textNowPlaying);
 		btnPlayer = (Button) findViewById(R.id.btnMusicPlayer);
 		mediaListView = (ListView) findViewById(R.id.listViewMusic);
-		mediaLayout = (LinearLayout) findViewById(R.id.linearLayoutMusicList);
+	//	mediaLayout = (LinearLayout) findViewById(R.id.linearLayoutMusicList);
 		btnPause = (Button) findViewById(R.id.btnPause);
 		btnPlay = (Button) findViewById(R.id.btnPlay);
 		linearLayoutPlayingSong = (LinearLayout) findViewById(R.id.linearLayoutPlayingSong);
@@ -325,14 +331,27 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 			btnPlay.setVisibility(View.GONE);
 		}
 	}
-	
+	public static void showLoading(Boolean show){
+		outAnimation = new AlphaAnimation(1f, 0f);
+		inAnimation = new AlphaAnimation(0f, 1f);
+
+		progressBarHolder.setAnimation(outAnimation);
+		if(show)
+		{ inAnimation.setDuration(200);
+		progressBarHolder.setAnimation(inAnimation);
+			progressBarHolder.setVisibility(View.VISIBLE);}
+		else
+		{outAnimation.setDuration(200);
+		progressBarHolder.setAnimation(outAnimation);
+			progressBarHolder.setVisibility(View.GONE);}
+	}
 	public static void changeUI(){
 		updateUI();
 		changeButton();
 	}
 	private  void  SendRequest(String query){
 //		progressBar.setVisibility(View.VISIBLE);
-
+showLoading(true);
 		RequestQueue queue = Volley.newRequestQueue(this);
 		String url ="https://www.googleapis.com/youtube/v3/search?part=snippet&q="+query+"&type=video&order="+criteria+"&duration="+vidLen+"&maxResults="+maxres+"&key="+key;
 
@@ -341,6 +360,7 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 				new Response.Listener<JSONObject>() {
 					@Override
 					public void onResponse(JSONObject  response)  {
+						showLoading(false);
 						try {PlayerConstants.SONGS_LIST.clear(); JSONArray items=response.getJSONArray("items");
 							int j;
 							JSONObject item;
@@ -364,7 +384,7 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 						}
 					}}, new Response.ErrorListener() {
 			@Override
-			public void onErrorResponse(VolleyError error) {
+			public void onErrorResponse(VolleyError error) {showLoading(false);
 				Log.d("That didn't work!","vbds");
 			}
 		});

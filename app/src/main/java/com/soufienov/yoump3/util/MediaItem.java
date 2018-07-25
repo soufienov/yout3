@@ -8,6 +8,11 @@ public class MediaItem {
 	String artist;
 	String album;
 	String path;
+
+	public String getThumbnail() {
+		return thumbnail;
+	}
+
 	String thumbnail;
 	long duration;
 	long albumId;
@@ -39,7 +44,8 @@ public class MediaItem {
 	}
 
 	public String getArtist() {
-		return artist;
+		if(artist!=null)return artist;
+		else return "";
 	}
 
 	public void setArtist(String artist) {
@@ -47,7 +53,8 @@ public class MediaItem {
 	}
 
 	public String getAlbum() {
-		return album;
+		if(album!=null)return album;
+		else  return "";
 	}
 
 	public void setAlbum(String album) {
@@ -55,8 +62,9 @@ public class MediaItem {
 	}
 
 	public String getPath() {
-
+if(path!=null)
 		return path;
+else return "";
 	}
 
 	public void setPath(String path) {
@@ -80,7 +88,8 @@ public class MediaItem {
 	}
 
 	public String getComposer() {
-		return composer;
+		if(composer!=null)return composer;
+		else return "";
 	}
 
 	public void setComposer(String composer) {

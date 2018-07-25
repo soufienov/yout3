@@ -13,7 +13,7 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/ic_launcher"
+        android:icon="@drawable/yoump3_ic"
         android:label="@string/app_name"
         android:theme="@style/Theme.AppCompat" >
         <activity
@@ -32,11 +32,7 @@
             android:launchMode="singleTask"
             android:screenOrientation="portrait" >
         </activity>
-        <activity
-            android:name=".SettingsActivity"
-
-            >
-        </activity>
+       
         <service
             android:name=".service.SongService"
             android:exported="true" 

@@ -6,10 +6,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 import com.soufienov.yoump3.R;
 import com.soufienov.yoump3.util.MediaItem;
 import com.soufienov.yoump3.util.UtilFunctions;
+import com.squareup.picasso.Picasso;
 
 public class CustomAdapter extends ArrayAdapter<MediaItem>{
 
@@ -26,6 +28,7 @@ public class CustomAdapter extends ArrayAdapter<MediaItem>{
 
 	private class ViewHolder{
 		TextView textViewSongName, textViewArtist, textViewDuration;
+		ImageView thumbnail;
 	}
 	
 	ViewHolder holder;
@@ -39,6 +42,7 @@ public class CustomAdapter extends ArrayAdapter<MediaItem>{
 			holder.textViewSongName = (TextView) myView.findViewById(R.id.textViewSongName);
 			holder.textViewArtist = (TextView) myView.findViewById(R.id.textViewArtist);
 			holder.textViewDuration = (TextView) myView.findViewById(R.id.textViewDuration);
+			holder.thumbnail=(ImageView)myView.findViewById(R.id.thumb);
 			myView.setTag(holder);
 		}else{
 			holder = (ViewHolder)myView.getTag();
@@ -46,6 +50,8 @@ public class CustomAdapter extends ArrayAdapter<MediaItem>{
 		MediaItem detail = listOfSongs.get(position);
 		holder.textViewSongName.setText(detail.toString());
 		holder.textViewArtist.setText(detail.getAlbum() + " - " + detail.getArtist());
+		Picasso.get().load(detail.getThumbnail()).into(holder.thumbnail);
+if(detail.getDuration()>0)
 		holder.textViewDuration.setText(UtilFunctions.getDuration(detail.getDuration()));
 		return myView;
 	}

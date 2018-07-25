@@ -1,249 +1,261 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:1:1-57:12
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:1:1-57:12
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:1:1-57:12
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:1:1-57:12
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c84a967cd9a5c6eb01336c4f5db69f0d\AndroidManifest.xml:2:1-11:12
-MERGED from [com.google.android.gms:play-services-ads:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\67130e311969517f09b3cb9df38d6aad\AndroidManifest.xml:17:1-25:12
-MERGED from [com.android.support:design:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\373ad99278ef74adc6994da2500b872c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.github.clans:fab:1.6.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\a70d37ead47d224a5aed20c0e19174e0\AndroidManifest.xml:2:1-14:12
-MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:17:1-36:12
-MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\9fb998eb7b0cc0379cf1929060aeac7a\AndroidManifest.xml:2:1-9:12
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bdeaba0f6852f4d8fc4839c79207ec82\AndroidManifest.xml:17:1-28:12
-MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\a59ea6828db5bf2612c31871afa06bb0\AndroidManifest.xml:2:1-6:12
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f17978be608ca40f7106367228cf3d9e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\be3e06d71fa616f6c313c1d130380f56\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\1a0905c674e056750d588271c1853106\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\31f40b38609426996e25db6df95f4215\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\e3a662f7aae6caad20ef52b751f94301\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\4d01fca3f395512b7333727596469013\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\7b1a1e0f9237c5040c37f95ddcd7c8a2\AndroidManifest.xml:2:1-6:12
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\dda78008c1b2c5f4f971c7e8a6b0e1cf\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\873ddc44162e2c4621e71fb85e691ebc\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\61c96fb2fa67f85781e8047e1cc15dff\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\bd020d427e0aa122ad1932561f213d8c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\4a4d6cb7d9080c70de281fdcdea4764c\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\b70d08dba9bd76e50b690ef77555921e\AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\e5af98c50159457bc73448c5b60618cc\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\89e872f045d385bcef8a83144f1883af\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\b6d8bc8eb21499b91242267dbb55b931\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ee95c9362f6508e7bf1dc9792bb8a665\AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\f18ac3f6f626e180e7e1b44b644bbcec\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:1:1-57:12
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:1:1-57:12
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:1:1-57:12
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:1:1-53:12
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:1:1-53:12
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:1:1-53:12
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:1:1-53:12
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\841320536a45084e2fc7a6fc35c017ba\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-ads:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\9c8fb0487bb12b8f8d7a375a06da3591\AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:design:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c19237b7a8249599ee8b8d0885f0bd68\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:2:1-14:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:2:1-14:12
+MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\69b46b2295a5d61ff9b696aab05c29b2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\05b2cce4771c9fa99f28732dcb752d14\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\6a4e8388b78dcc101d02eccb2cf1e8cd\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\cd2f8c7f7c9ceb8d1606a41001ae4575\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\44c235c8c09f986d67a3b1bfb2d81776\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\b91a12385597118ac8c194a276cb0f1d\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\85d9c0d5db11bb2402aeaca8c453f2f1\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\f552102fc4018fbc9d625690872cd711\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7940f4854fefbed0d4b7cf67f23e382a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\7eb174d116244b03791706819f4e83df\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c954b423d3accee0d0e1bdc6e266bdff\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\05125a8009096eec17139df39f112f7b\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\775c6f09bf38b413d09b9d28a1ffe04a\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\494a8fa5de2390b3fe5df30d5bc56820\AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\0beda1034d41eaaede7d28e9f5ff77fa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:2:1-6:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2e81732895f4cbdd9a013a748f0687a3\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ce121d6fadd5782b26bb07e63e547622\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5dacf2910fa264870180d77ac2ebac14\AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7981d0e9b9155855946b3319ce6ac33a\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:1:1-53:12
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:1:1-53:12
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:1:1-53:12
 	package
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:2:5-35
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:2:5-35
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:4:5-30
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:1:11-69
 	android:versionCode
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:3:5-28
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
 uses-sdk
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c84a967cd9a5c6eb01336c4f5db69f0d\AndroidManifest.xml:7:5-43
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c84a967cd9a5c6eb01336c4f5db69f0d\AndroidManifest.xml:7:5-43
-MERGED from [com.google.android.gms:play-services-ads:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\67130e311969517f09b3cb9df38d6aad\AndroidManifest.xml:21:5-23:62
-MERGED from [com.google.android.gms:play-services-ads:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\67130e311969517f09b3cb9df38d6aad\AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:design:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\373ad99278ef74adc6994da2500b872c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\373ad99278ef74adc6994da2500b872c\AndroidManifest.xml:20:5-44
-MERGED from [com.github.clans:fab:1.6.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\a70d37ead47d224a5aed20c0e19174e0\AndroidManifest.xml:8:5-10:41
-MERGED from [com.github.clans:fab:1.6.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\a70d37ead47d224a5aed20c0e19174e0\AndroidManifest.xml:8:5-10:41
-MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\9fb998eb7b0cc0379cf1929060aeac7a\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\9fb998eb7b0cc0379cf1929060aeac7a\AndroidManifest.xml:5:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bdeaba0f6852f4d8fc4839c79207ec82\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bdeaba0f6852f4d8fc4839c79207ec82\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\a59ea6828db5bf2612c31871afa06bb0\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\a59ea6828db5bf2612c31871afa06bb0\AndroidManifest.xml:4:5-43
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f17978be608ca40f7106367228cf3d9e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\f17978be608ca40f7106367228cf3d9e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\be3e06d71fa616f6c313c1d130380f56\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\be3e06d71fa616f6c313c1d130380f56\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\1a0905c674e056750d588271c1853106\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\1a0905c674e056750d588271c1853106\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\31f40b38609426996e25db6df95f4215\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\31f40b38609426996e25db6df95f4215\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\e3a662f7aae6caad20ef52b751f94301\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\e3a662f7aae6caad20ef52b751f94301\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\4d01fca3f395512b7333727596469013\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\4d01fca3f395512b7333727596469013\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\7b1a1e0f9237c5040c37f95ddcd7c8a2\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\7b1a1e0f9237c5040c37f95ddcd7c8a2\AndroidManifest.xml:4:5-43
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\dda78008c1b2c5f4f971c7e8a6b0e1cf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\dda78008c1b2c5f4f971c7e8a6b0e1cf\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\873ddc44162e2c4621e71fb85e691ebc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\873ddc44162e2c4621e71fb85e691ebc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\61c96fb2fa67f85781e8047e1cc15dff\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\61c96fb2fa67f85781e8047e1cc15dff\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\bd020d427e0aa122ad1932561f213d8c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\bd020d427e0aa122ad1932561f213d8c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\4a4d6cb7d9080c70de281fdcdea4764c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\4a4d6cb7d9080c70de281fdcdea4764c\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\b70d08dba9bd76e50b690ef77555921e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\b70d08dba9bd76e50b690ef77555921e\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\e5af98c50159457bc73448c5b60618cc\AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.1.1] C:\Users\user\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\e5af98c50159457bc73448c5b60618cc\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\89e872f045d385bcef8a83144f1883af\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\89e872f045d385bcef8a83144f1883af\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\b6d8bc8eb21499b91242267dbb55b931\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\b6d8bc8eb21499b91242267dbb55b931\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ee95c9362f6508e7bf1dc9792bb8a665\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\ee95c9362f6508e7bf1dc9792bb8a665\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\f18ac3f6f626e180e7e1b44b644bbcec\AndroidManifest.xml:20:5-44
-MERGED from [android.arch.core:runtime:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\f18ac3f6f626e180e7e1b44b644bbcec\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
-INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\841320536a45084e2fc7a6fc35c017ba\AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\841320536a45084e2fc7a6fc35c017ba\AndroidManifest.xml:7:5-43
+MERGED from [com.google.android.gms:play-services-ads:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\9c8fb0487bb12b8f8d7a375a06da3591\AndroidManifest.xml:21:5-23:62
+MERGED from [com.google.android.gms:play-services-ads:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\9c8fb0487bb12b8f8d7a375a06da3591\AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c19237b7a8249599ee8b8d0885f0bd68\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c19237b7a8249599ee8b8d0885f0bd68\AndroidManifest.xml:20:5-44
+MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:8:5-10:41
+MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:8:5-10:41
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\69b46b2295a5d61ff9b696aab05c29b2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\69b46b2295a5d61ff9b696aab05c29b2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\05b2cce4771c9fa99f28732dcb752d14\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\05b2cce4771c9fa99f28732dcb752d14\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\6a4e8388b78dcc101d02eccb2cf1e8cd\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\6a4e8388b78dcc101d02eccb2cf1e8cd\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\cd2f8c7f7c9ceb8d1606a41001ae4575\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-v4-27.1.1.aar\cd2f8c7f7c9ceb8d1606a41001ae4575\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\44c235c8c09f986d67a3b1bfb2d81776\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\44c235c8c09f986d67a3b1bfb2d81776\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\b91a12385597118ac8c194a276cb0f1d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\b91a12385597118ac8c194a276cb0f1d\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\85d9c0d5db11bb2402aeaca8c453f2f1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\85d9c0d5db11bb2402aeaca8c453f2f1\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\f552102fc4018fbc9d625690872cd711\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\f552102fc4018fbc9d625690872cd711\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7940f4854fefbed0d4b7cf67f23e382a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7940f4854fefbed0d4b7cf67f23e382a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\7eb174d116244b03791706819f4e83df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\7eb174d116244b03791706819f4e83df\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c954b423d3accee0d0e1bdc6e266bdff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c954b423d3accee0d0e1bdc6e266bdff\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\05125a8009096eec17139df39f112f7b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-core-utils-27.1.1.aar\05125a8009096eec17139df39f112f7b\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\775c6f09bf38b413d09b9d28a1ffe04a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\775c6f09bf38b413d09b9d28a1ffe04a\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\494a8fa5de2390b3fe5df30d5bc56820\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\494a8fa5de2390b3fe5df30d5bc56820\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\0beda1034d41eaaede7d28e9f5ff77fa\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\0beda1034d41eaaede7d28e9f5ff77fa\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:4:5-43
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2e81732895f4cbdd9a013a748f0687a3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2e81732895f4cbdd9a013a748f0687a3\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ce121d6fadd5782b26bb07e63e547622\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ce121d6fadd5782b26bb07e63e547622\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5dacf2910fa264870180d77ac2ebac14\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5dacf2910fa264870180d77ac2ebac14\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7981d0e9b9155855946b3319ce6ac33a\AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\7981d0e9b9155855946b3319ce6ac33a\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
+INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:6:5-8:41
 	tools:overrideLibrary
-		ADDED from [com.google.android.gms:play-services-ads:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\67130e311969517f09b3cb9df38d6aad\AndroidManifest.xml:23:9-59
+		ADDED from [com.google.android.gms:play-services-ads:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\9c8fb0487bb12b8f8d7a375a06da3591\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:8:9-38
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:8:9-38
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:7:9-35
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:7:9-35
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:10:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:23:5-67
-MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:23:5-67
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:10:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:10:22-64
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:10:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:11:5-80
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:11:5-80
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:11:22-77
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:11:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:12:5-81
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:12:22-78
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:12:22-78
 application
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:14:5-55:19
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c84a967cd9a5c6eb01336c4f5db69f0d\AndroidManifest.xml:9:5-20
-MERGED from [com.android.volley:volley:1.1.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\c84a967cd9a5c6eb01336c4f5db69f0d\AndroidManifest.xml:9:5-20
-MERGED from [com.github.clans:fab:1.6.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\a70d37ead47d224a5aed20c0e19174e0\AndroidManifest.xml:12:5-20
-MERGED from [com.github.clans:fab:1.6.2] C:\Users\user\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\a70d37ead47d224a5aed20c0e19174e0\AndroidManifest.xml:12:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:26:5-34:19
-MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\9fb998eb7b0cc0379cf1929060aeac7a\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\9fb998eb7b0cc0379cf1929060aeac7a\AndroidManifest.xml:7:5-20
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bdeaba0f6852f4d8fc4839c79207ec82\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bdeaba0f6852f4d8fc4839c79207ec82\AndroidManifest.xml:22:5-26:19
-MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\a59ea6828db5bf2612c31871afa06bb0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\a59ea6828db5bf2612c31871afa06bb0\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\e3a662f7aae6caad20ef52b751f94301\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\e3a662f7aae6caad20ef52b751f94301\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\4d01fca3f395512b7333727596469013\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\4d01fca3f395512b7333727596469013\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\7b1a1e0f9237c5040c37f95ddcd7c8a2\AndroidManifest.xml:5:5-20
-MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\7b1a1e0f9237c5040c37f95ddcd7c8a2\AndroidManifest.xml:5:5-20
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:14:5-51:19
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\841320536a45084e2fc7a6fc35c017ba\AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\841320536a45084e2fc7a6fc35c017ba\AndroidManifest.xml:9:5-20
+MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:12:5-20
+MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:12:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:7:5-12:19
+MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\69b46b2295a5d61ff9b696aab05c29b2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\69b46b2295a5d61ff9b696aab05c29b2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\05b2cce4771c9fa99f28732dcb752d14\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\05b2cce4771c9fa99f28732dcb752d14\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\6a4e8388b78dcc101d02eccb2cf1e8cd\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-license-11.8.0.aar\6a4e8388b78dcc101d02eccb2cf1e8cd\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:5:5-20
 	android:label
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:17:9-41
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:17:9-41
 	android:icon
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:16:9-45
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:16:9-43
 	android:allowBackup
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:15:9-35
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:18:9-47
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:18:9-47
 activity#com.soufienov.yoump3.MainActivity
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:19:9-28:20
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:19:9-28:20
 	android:screenOrientation
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:22:13-49
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:22:13-49
 	android:launchMode
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:21:13-44
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:21:13-44
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:20:13-41
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:20:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:23:13-27:29
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:23:13-27:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:24:17-69
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:24:17-69
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:24:25-66
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:24:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:26:17-77
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:26:17-77
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:26:27-74
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:26:27-74
 activity#com.soufienov.yoump3.AudioPlayerActivity
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:29:9-34:20
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:29:9-34:20
 	android:screenOrientation
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:33:13-49
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:33:13-49
 	android:excludeFromRecents
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:31:13-46
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:31:13-46
 	android:launchMode
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:32:13-44
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:32:13-44
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:30:13-48
-activity#com.soufienov.yoump3.SettingsActivity
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:35:9-39:20
-	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:36:13-45
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:30:13-48
 service#com.soufienov.yoump3.service.SongService
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:40:9-43:37
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:36:9-39:37
 	android:enabled
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:43:13-35
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:39:13-35
 	android:exported
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:42:13-36
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:38:13-36
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:41:13-48
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:37:13-48
 receiver#com.soufienov.yoump3.receiver.NotificationBroadcast
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:45:9-54:20
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:41:9-50:20
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:45:19-65
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:41:19-65
 intent-filter#android.intent.action.MEDIA_BUTTON+com.soufienov.yoump3.delete+com.soufienov.yoump3.next+com.soufienov.yoump3.pause+com.soufienov.yoump3.play+com.soufienov.yoump3.previous
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:46:13-53:29
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:42:13-49:29
 action#com.soufienov.yoump3.delete
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:47:17-70
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:43:17-70
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:47:25-67
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:43:25-67
 action#com.soufienov.yoump3.pause
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:48:17-69
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:48:25-66
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:44:25-66
 action#com.soufienov.yoump3.next
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:49:17-68
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:45:17-68
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:49:25-65
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:45:25-65
 action#com.soufienov.yoump3.play
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:50:17-68
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:46:17-68
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:50:25-65
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:46:25-65
 action#com.soufienov.yoump3.previous
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:51:17-72
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:47:17-72
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:51:25-69
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:47:25-69
 action#android.intent.action.MEDIA_BUTTON
-ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:52:17-77
+ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:48:17-77
 	android:name
-		ADDED from C:\Users\user\Desktop\yout3\app\src\main\AndroidManifest.xml:52:25-74
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:24:5-79
-	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:24:22-76
-activity#com.google.android.gms.ads.AdActivity
-ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:29:9-33:64
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:48:25-74
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:10:13-72
 	android:exported
-		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:32:13-37
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:9:13-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:24:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:24:22-76
+activity#com.google.android.gms.ads.AdActivity
+ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:29:9-33:64
+	android:exported
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:32:13-37
 	android:configChanges
-		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:31:13-122
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:31:13-122
 	android:theme
-		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:33:13-61
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:33:13-61
 	android:name
-		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\22edf92ee0c8281c15376b9c277191c8\AndroidManifest.xml:30:13-65
+		ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:30:13-65
 meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bdeaba0f6852f4d8fc4839c79207ec82\AndroidManifest.xml:23:9-25:69
+ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\05b2cce4771c9fa99f28732dcb752d14\AndroidManifest.xml:23:9-25:69
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bdeaba0f6852f4d8fc4839c79207ec82\AndroidManifest.xml:25:13-66
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\05b2cce4771c9fa99f28732dcb752d14\AndroidManifest.xml:25:13-66
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\user\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\bdeaba0f6852f4d8fc4839c79207ec82\AndroidManifest.xml:24:13-58
+		ADDED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\05b2cce4771c9fa99f28732dcb752d14\AndroidManifest.xml:24:13-58

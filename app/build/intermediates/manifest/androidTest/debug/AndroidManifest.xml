@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="com.tutorialsface.yoump3"
+                     android:targetPackage="com.soufienov.yoump3"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for com.tutorialsface.yoump3"/>
+                     android:label="Tests for com.soufienov.yoump3"/>
 </manifest>

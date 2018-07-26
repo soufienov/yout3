@@ -1,4 +1,4 @@
-#Wed Jul 25 14:26:39 GMT+01:00 2018
-base.0=C\:\\Users\\sofiene\\workspace\\yout3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\43
+#Thu Jul 26 14:44:55 CEST 2018
+base.0=C\:\\Users\\user\\AndroidStudioProjects\\yout3\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex

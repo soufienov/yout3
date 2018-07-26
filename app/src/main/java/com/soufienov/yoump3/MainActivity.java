@@ -60,7 +60,7 @@ public class MainActivity extends Activity {
 	Button btnPlayer;
 	public static Button btnDownload;
 	static Button btnPause, btnPlay, btnNext, btnPrevious;
-	Button btnStop;
+	Button btnStop,btnSearch;
 	LinearLayout mediaLayout;
 	static LinearLayout linearLayoutPlayingSong;
 	ListView mediaListView;
@@ -92,8 +92,12 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 //		getActionBar().hide();
 		setContentView(R.layout.activity_main);
 		context = MainActivity.this;
-		searchView=(SearchView)findViewById(R.id.searchView);
-		searchView.setQueryHint("Search Videos");
+		try {
+			init();
+
+		} catch (JSONException e) {
+			e.printStackTrace();
+		}
 		mAdView = findViewById(R.id.adView);
 
 		AdRequest adRequest = new AdRequest.Builder().build();
@@ -103,28 +107,7 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 		mInterstitialAd.loadAd(new AdRequest.Builder().build());
 
 
-		searchView.setIconified(false);
-		        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
 
-            @Override
-            public boolean onQueryTextSubmit(String query) {
-				SendRequest(query);
-				return false;
-            }
-
-            @Override
-            public boolean onQueryTextChange(String newText) {
-                Toast.makeText(getBaseContext(), newText, Toast.LENGTH_LONG).show();
-                return false;
-            }
-        });
-
-		try {
-			init();		Log.e("height",materialDesignFAM.getLayoutParams().height+"");
-
-		} catch (JSONException e) {
-			e.printStackTrace();
-		}
 	}
 	
 	private void init() throws JSONException {
@@ -132,18 +115,37 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 		setListeners();
 		playingSong.setSelected(true);
 		progressBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.white), Mode.SRC_IN);
-		if(PlayerConstants.SONGS_LIST.size() <= 0){
-			PlayerConstants.SONGS_LIST = UtilFunctions.listOfDownloadedSongs(getApplicationContext());
-		}
-    }
+		Log.e("size","size="+PlayerConstants.SONGS_LIST.size());
+		if(PlayerConstants.SONGS_LIST.size() <= 0)
+		PlayerConstants.SONGS_LIST = UtilFunctions.listOfDownloadedSongs(getApplicationContext());
 
+		if(PlayerConstants.SONGS_LIST.size() <= 0){
+			setContentView(R.layout.search_layout);
+		//	btnSearch=(Button)findViewById(R.id.search_button);
+		}
+		else
+			setListItems();
+    }
+public void searchVideos(View view) throws JSONException {
+		TextView query= (TextView)findViewById(R.id.search);
+		String text=query.getText().toString();
+		setContentView(R.layout.activity_main);
+		getViews();
+		SendRequest(text);
+
+
+
+}
 	private void setListItems() {
+
 		customAdapter = new CustomAdapter(this,R.layout.custom_list, PlayerConstants.SONGS_LIST);
 		mediaListView.setAdapter(customAdapter); 
 		mediaListView.setFastScrollEnabled(true);
 	}
 	
 	private void getViews() {
+		searchView=(SearchView)findViewById(R.id.searchView);
+		searchView.setQueryHint("Search Videos");
 		btnDownload=(Button)findViewById(R.id.btnMusicPlayer);
 		materialDesignFAM = (FloatingActionMenu) findViewById(R.id.material_design_android_floating_action_menu);
 		floatingActionButton1 = (FloatingActionButton) findViewById(R.id.material_design_floating_action_menu_item1);
@@ -167,6 +169,23 @@ progressBarHolder =(FrameLayout)findViewById(R.id.progressBarHolder) ;
 	}
 
 	private void setListeners() {
+
+		searchView.setIconified(false);
+		searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+
+			@Override
+			public boolean onQueryTextSubmit(String query) {
+				SendRequest(query);
+				return false;
+			}
+
+			@Override
+			public boolean onQueryTextChange(String newText) {
+				Toast.makeText(getBaseContext(), newText, Toast.LENGTH_LONG).show();
+				return false;
+			}
+		});
+
 		materialDesignFAM.setClosedOnTouchOutside(true);
 
 		floatingActionButton1.setOnClickListener(new View.OnClickListener() {
@@ -349,8 +368,7 @@ progressBarHolder =(FrameLayout)findViewById(R.id.progressBarHolder) ;
 		changeButton();
 	}
 	private  void  SendRequest(String query){
-//		progressBar.setVisibility(View.VISIBLE);
-showLoading(true);
+	showLoading(true);
 		RequestQueue queue = Volley.newRequestQueue(this);
 		String url ="https://www.googleapis.com/youtube/v3/search?part=snippet&q="+query+"&type=video&order="+criteria+"&duration="+vidLen+"&maxResults="+maxres+"&key="+key;
 
@@ -374,11 +392,10 @@ showLoading(true);
 								mInterstitialAd.show();
 							}
 
-							//progressBar.setVisibility(View.GONE);
+
 						}
 						catch (Exception e) {
 							e.printStackTrace();
-							//progressBar.setVisibility(View.GONE);
 
 						}
 					}}, new Response.ErrorListener() {

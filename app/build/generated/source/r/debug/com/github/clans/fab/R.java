@@ -81,7 +81,7 @@ public final class R {
         public static final int labels_text_size = 0x7f070088;
     }
     public static final class drawable {
-        public static final int fab_add = 0x7f080067;
+        public static final int fab_add = 0x7f080068;
     }
     public static final class id {
         public static final int down = 0x7f090043;
@@ -94,8 +94,8 @@ public final class R {
         public static final int none = 0x7f090074;
         public static final int normal = 0x7f090075;
         public static final int right = 0x7f090082;
-        public static final int start = 0x7f0900a9;
-        public static final int up = 0x7f0900ce;
+        public static final int start = 0x7f0900aa;
+        public static final int up = 0x7f0900cf;
     }
     public static final class styleable {
         public static final int[] FloatingActionButton = { 0x7f040037, 0x7f040038, 0x7f04003f, 0x7f040081, 0x7f04008d, 0x7f04008e, 0x7f04008f, 0x7f040090, 0x7f040091, 0x7f040092, 0x7f040093, 0x7f040094, 0x7f040095, 0x7f040096, 0x7f040097, 0x7f040098, 0x7f040099, 0x7f04009a, 0x7f04009b, 0x7f04009c, 0x7f04009d, 0x7f04009e, 0x7f04009f, 0x7f0400a0, 0x7f0400a1, 0x7f0400a2, 0x7f040125, 0x7f04012f, 0x7f04018e };

@@ -16,7 +16,7 @@
     <application
         android:allowBackup="true"
         android:debuggable="true"
-        android:icon="@drawable/yoump3_ic"
+        android:icon="@drawable/ic_luncher"
         android:label="@string/app_name"
         android:testOnly="true"
         android:theme="@style/Theme.AppCompat" >

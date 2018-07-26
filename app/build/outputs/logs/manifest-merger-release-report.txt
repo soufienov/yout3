@@ -8,6 +8,7 @@ MERGED from [com.android.volley:volley:1.1.0] C:\Users\sofiene\.gradle\caches\tr
 MERGED from [com.google.android.gms:play-services-ads:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-11.8.0.aar\9c8fb0487bb12b8f8d7a375a06da3591\AndroidManifest.xml:17:1-25:12
 MERGED from [com.android.support:design:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c19237b7a8249599ee8b8d0885f0bd68\AndroidManifest.xml:17:1-22:12
 MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:2:1-14:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:2:1-14:12
 MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:17:1-36:12
 MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\69b46b2295a5d61ff9b696aab05c29b2\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-11.8.0.aar\05b2cce4771c9fa99f28732dcb752d14\AndroidManifest.xml:17:1-28:12
@@ -16,9 +17,7 @@ MERGED from [com.android.support:support-v4:27.1.1] C:\Users\sofiene\.gradle\cac
 MERGED from [com.android.support:appcompat-v7:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\appcompat-v7-27.1.1.aar\44c235c8c09f986d67a3b1bfb2d81776\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\b91a12385597118ac8c194a276cb0f1d\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\85d9c0d5db11bb2402aeaca8c453f2f1\AndroidManifest.xml:17:1-22:12
-MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:2:1-6:12
-MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:2:1-6:12
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\f552102fc4018fbc9d625690872cd711\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7940f4854fefbed0d4b7cf67f23e382a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\7eb174d116244b03791706819f4e83df\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-core-ui-27.1.1.aar\c954b423d3accee0d0e1bdc6e266bdff\AndroidManifest.xml:17:1-22:12
@@ -26,6 +25,9 @@ MERGED from [com.android.support:support-core-utils:27.1.1] C:\Users\sofiene\.gr
 MERGED from [com.android.support:support-vector-drawable:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-vector-drawable-27.1.1.aar\775c6f09bf38b413d09b9d28a1ffe04a\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\494a8fa5de2390b3fe5df30d5bc56820\AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\0beda1034d41eaaede7d28e9f5ff77fa\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:2:1-6:12
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2e81732895f4cbdd9a013a748f0687a3\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ce121d6fadd5782b26bb07e63e547622\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\5dacf2910fa264870180d77ac2ebac14\AndroidManifest.xml:17:1-22:12
@@ -59,6 +61,8 @@ MERGED from [com.android.support:design:27.1.1] C:\Users\sofiene\.gradle\caches\
 MERGED from [com.android.support:design:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\design-27.1.1.aar\c19237b7a8249599ee8b8d0885f0bd68\AndroidManifest.xml:20:5-44
 MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:8:5-10:41
 MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:8:5-10:41
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\69b46b2295a5d61ff9b696aab05c29b2\AndroidManifest.xml:5:5-44
@@ -75,12 +79,8 @@ MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\sofiene\.gradl
 MERGED from [com.android.support:recyclerview-v7:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\recyclerview-v7-27.1.1.aar\b91a12385597118ac8c194a276cb0f1d\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\85d9c0d5db11bb2402aeaca8c453f2f1\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\transition-27.1.1.aar\85d9c0d5db11bb2402aeaca8c453f2f1\AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:4:5-43
-MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:4:5-43
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\f552102fc4018fbc9d625690872cd711\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\f552102fc4018fbc9d625690872cd711\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7940f4854fefbed0d4b7cf67f23e382a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-fragment:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-fragment-27.1.1.aar\7940f4854fefbed0d4b7cf67f23e382a\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-27.1.1.aar\7eb174d116244b03791706819f4e83df\AndroidManifest.xml:20:5-44
@@ -95,6 +95,12 @@ MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\sofiene\.
 MERGED from [com.android.support:support-media-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-media-compat-27.1.1.aar\494a8fa5de2390b3fe5df30d5bc56820\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\0beda1034d41eaaede7d28e9f5ff77fa\AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.1.1] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\support-compat-27.1.1.aar\0beda1034d41eaaede7d28e9f5ff77fa\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-ads-lite-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-license-11.8.0.aar\99e868759a228ce97d36d89cfab47922\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-basement-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-basement-license-11.8.0.aar\5eb7caf6470f3b9e2cbb5407eb2b140e\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-license-11.8.0.aar\35aef307ce221bf13d2cb843af9c206b\AndroidManifest.xml:4:5-43
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2e81732895f4cbdd9a013a748f0687a3\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\2e81732895f4cbdd9a013a748f0687a3\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\ce121d6fadd5782b26bb07e63e547622\AndroidManifest.xml:20:5-44
@@ -135,6 +141,8 @@ MERGED from [com.android.volley:volley:1.1.0] C:\Users\sofiene\.gradle\caches\tr
 MERGED from [com.android.volley:volley:1.1.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\volley-1.1.0.aar\841320536a45084e2fc7a6fc35c017ba\AndroidManifest.xml:9:5-20
 MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:12:5-20
 MERGED from [com.github.clans:fab:1.6.2] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\AndroidManifest.xml:12:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:7:5-12:19
 MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:26:5-34:19
 MERGED from [com.google.android.gms:play-services-gass:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-gass-11.8.0.aar\69b46b2295a5d61ff9b696aab05c29b2\AndroidManifest.xml:7:5-20
@@ -152,7 +160,7 @@ MERGED from [com.google.android.gms:play-services-gass-license:11.8.0] C:\Users\
 	android:label
 		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:17:9-41
 	android:icon
-		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:16:9-43
+		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:16:9-44
 	android:allowBackup
 		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:15:9-35
 	android:theme
@@ -223,6 +231,14 @@ action#android.intent.action.MEDIA_BUTTON
 ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:48:17-77
 	android:name
 		ADDED from C:\Users\sofiene\workspace\yout3\app\src\main\AndroidManifest.xml:48:25-74
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\AndroidManifest.xml:9:13-64
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-ads-lite:11.8.0] C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\play-services-ads-lite-11.8.0.aar\813fae516ef2e1f17a0f25966528c623\AndroidManifest.xml:24:5-79
 	android:name

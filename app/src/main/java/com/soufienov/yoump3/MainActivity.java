@@ -1,21 +1,26 @@
 package com.soufienov.yoump3;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.DownloadManager;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.drawable.BitmapDrawable;
 import android.net.Uri;
+import android.net.ConnectivityManager;
+
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v4.app.ActivityCompat;
+import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -48,12 +53,16 @@ import com.soufienov.yoump3.service.SongService;
 import com.soufienov.yoump3.util.MediaItem;
 import com.soufienov.yoump3.util.PlayerConstants;
 import com.soufienov.yoump3.util.UtilFunctions;
+import android.support.v7.app.ActionBar;
+import android.view.Gravity;
+import android.widget.RelativeLayout;
+import android.graphics.Color;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity  {
 	String LOG_CLASS = "MainActivity";
 	CustomAdapter customAdapter = null;
 	static TextView playingSong;
@@ -113,6 +122,7 @@ FloatingActionButton floatingActionButton1, floatingActionButton2, floatingActio
 	private void init() throws JSONException {
 		getViews();
 		setListeners();
+		ActionBarTitleGravity();
 		playingSong.setSelected(true);
 		progressBar.getProgressDrawable().setColorFilter(getResources().getColor(R.color.white), Mode.SRC_IN);
 		Log.e("size","size="+PlayerConstants.SONGS_LIST.size());
@@ -368,7 +378,6 @@ progressBarHolder =(FrameLayout)findViewById(R.id.progressBarHolder) ;
 		changeButton();
 	}
 	private  void  SendRequest(String query){
-	showLoading(true);
 		RequestQueue queue = Volley.newRequestQueue(this);
 		String url ="https://www.googleapis.com/youtube/v3/search?part=snippet&q="+query+"&type=video&order="+criteria+"&duration="+vidLen+"&maxResults="+maxres+"&key="+key;
 
@@ -409,7 +418,9 @@ progressBarHolder =(FrameLayout)findViewById(R.id.progressBarHolder) ;
 				MY_SOCKET_TIMEOUT_MS,
 				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
 				DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-		queue.add(stringRequest);
+				if(isInternetAvailable())
+				{showLoading(true);queue.add(stringRequest);}
+	else showAlert();
 
 	}
 	public void Download(){
@@ -457,5 +468,50 @@ progressBarHolder =(FrameLayout)findViewById(R.id.progressBarHolder) ;
 		// new DownloadFileFromURL().execute(args);
 
 	}
+   public  boolean isInternetAvailable() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 
+        return cm.getActiveNetworkInfo() != null;
+    }
+    public  void showAlert(){
+        AlertDialog.Builder builder;
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            builder = new AlertDialog.Builder(this, android.R.style.Theme_Material_Dialog_Alert);
+        } else {
+            builder = new AlertDialog.Builder(this);
+        }
+        builder.setTitle("No Internet")
+                .setMessage("Please check your intenet connection and try again")
+                .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                    public void onClick(DialogInterface dialog, int which) {
+                    }
+                })
+
+
+                .show();
+    }
+    private void ActionBarTitleGravity() {
+        // TODO Auto-generated method stub
+
+		ActionBar actionbar = getSupportActionBar();
+
+		TextView textview = new TextView(getApplicationContext());
+
+		RelativeLayout.LayoutParams layoutparams = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT, RelativeLayout.LayoutParams.WRAP_CONTENT);
+
+        textview.setLayoutParams(layoutparams);
+
+        textview.setText("YOUMP3");
+
+        textview.setTextColor(Color.RED);
+
+        textview.setGravity(Gravity.CENTER);
+
+        textview.setTextSize(20);
+
+        actionbar.setDisplayOptions(ActionBar.DISPLAY_SHOW_CUSTOM);
+
+        actionbar.setCustomView(textview);
+
+    }
 }

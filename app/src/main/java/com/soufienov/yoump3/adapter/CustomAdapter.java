@@ -2,6 +2,8 @@ package com.soufienov.yoump3.adapter;
 
 import java.util.ArrayList;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -50,7 +52,15 @@ public class CustomAdapter extends ArrayAdapter<MediaItem>{
 		MediaItem detail = listOfSongs.get(position);
 		holder.textViewSongName.setText(detail.toString());
 		holder.textViewArtist.setText(detail.getAlbum() + " - " + detail.getArtist());
+		if(detail.getThumbnail()!=null)
 		Picasso.get().load(detail.getThumbnail()).into(holder.thumbnail);
+		else
+		{	Bitmap albumArt = UtilFunctions.getAlbumart(context, detail.getAlbumId());
+		if(albumArt != null){
+			holder.thumbnail.setBackgroundDrawable(new BitmapDrawable(albumArt));
+		}else{
+			holder.thumbnail.setBackgroundDrawable(new BitmapDrawable(UtilFunctions.getDefaultAlbumArt(context)));
+		}}
 if(detail.getDuration()>0)
 		holder.textViewDuration.setText(UtilFunctions.getDuration(detail.getDuration()));
 		return myView;

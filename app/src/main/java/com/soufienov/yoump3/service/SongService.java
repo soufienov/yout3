@@ -11,6 +11,7 @@ import android.app.PendingIntent;
 import android.app.Service;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -20,7 +21,9 @@ import android.media.MediaPlayer;
 import android.media.MediaPlayer.OnCompletionListener;
 import android.media.RemoteControlClient;
 import android.media.RemoteControlClient.MetadataEditor;
+import android.net.ConnectivityManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.Handler.Callback;
@@ -197,7 +200,6 @@ Log.e("looping",mp.isLooping()+"");
 	}
 
 	private void getmp3(final MediaItem data, Context context) {
-    	MainActivity.showLoading(true);
 		title=data.getTitle();
 		song=null;
 		MainActivity.btnDownload.setVisibility(View.GONE);
@@ -266,7 +268,10 @@ Log.e("looping",mp.isLooping()+"");
 				MY_SOCKET_TIMEOUT_MS,
 				DefaultRetryPolicy.DEFAULT_MAX_RETRIES,
 				DefaultRetryPolicy.DEFAULT_BACKOFF_MULT));
-		queue.add(stringRequest);
+				if(isInternetAvailable())
+				{    	MainActivity.showLoading(true);
+					queue.add(stringRequest);}
+	else showAlert();
 }
 	}
 
@@ -467,4 +472,26 @@ public File hitCache(String title){
 if(song.isFile()){return song;}
 else return null;
 }
+	public  boolean isInternetAvailable() {
+		ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+
+		return cm.getActiveNetworkInfo() != null;
+	}
+	public  void showAlert(){
+		AlertDialog.Builder builder;
+		if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+			builder = new AlertDialog.Builder(this, android.R.style.Theme_Material_Dialog_Alert);
+		} else {
+			builder = new AlertDialog.Builder(this);
+		}
+		builder.setTitle("No Internet")
+				.setMessage("Please check your intenet connection and try again")
+				.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+					public void onClick(DialogInterface dialog, int which) {
+					}
+				})
+
+
+				.show();
+	}
 }

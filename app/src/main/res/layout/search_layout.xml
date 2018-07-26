@@ -23,8 +23,10 @@
         android:layout_below="@id/search"
         android:background="@color/orange"
         android:layout_centerHorizontal="true"
-
-        android:drawable="@drawable/baseline_search_black_18dp"
+        android:bottomRightRadius="10dp"
+        android:bottomLeftRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp"
         android:onClick="searchVideos"
         android:text="Search" />
 

@@ -3,6 +3,26 @@
 
     <item
         is-multidex="false"
+        jar="C:\Users\sofiene\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.14.0\102d7be47241d781ef95f1581d414b0943053130\okio-1.14.0.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.3"
+        sha1="102d7be47241d781ef95f1581d414b0943053130">
+        <dex dex="C:\Users\sofiene\workspace\yout3\app\build\intermediates\transforms\preDex\release\30.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\exifinterface-27.1.0.aar\f552102fc4018fbc9d625690872cd711\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.3"
+        sha1="0d6df4057d1620a785f5bd2e69dd0d7866f3613c">
+        <dex dex="C:\Users\sofiene\workspace\yout3\app\build\intermediates\transforms\preDex\release\32.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\sofiene\.gradle\caches\modules-2\files-2.1\com.android.support\support-annotations\27.1.1\39ded76b5e1ce1c5b2688e1d25cdc20ecee32007\support-annotations-27.1.1.jar"
         jumboMode="false"
         min-sdk-version="14"
@@ -203,6 +223,16 @@
     </item>
     <item
         is-multidex="false"
+        jar="C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\picasso-2.71828.aar\af30271fede506e6ca06eea070027dbc\jars\classes.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.3"
+        sha1="4a77dd97f559e5fdc641380539d31a71f2b0470c">
+        <dex dex="C:\Users\sofiene\workspace\yout3\app\build\intermediates\transforms\preDex\release\33.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="C:\Users\sofiene\.gradle\caches\transforms-1\files-1.1\fab-1.6.2.aar\62708a3e32a51b751fd611b6382aeabd\jars\classes.jar"
         jumboMode="false"
         min-sdk-version="14"
@@ -230,6 +260,16 @@
         revision="27.0.3"
         sha1="7038c6d960d3fe26fd41bc509f256c9692d886ce">
         <dex dex="C:\Users\sofiene\workspace\yout3\app\build\intermediates\transforms\preDex\release\12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\sofiene\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.10.0\7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e\okhttp-3.10.0.jar"
+        jumboMode="false"
+        min-sdk-version="14"
+        optimize="true"
+        revision="27.0.3"
+        sha1="7ef0f1d95bf4c0b3ba30bbae25e0e562b05cf75e">
+        <dex dex="C:\Users\sofiene\workspace\yout3\app\build\intermediates\transforms\preDex\release\31.jar" />
     </item>
     <item
         is-multidex="false"
